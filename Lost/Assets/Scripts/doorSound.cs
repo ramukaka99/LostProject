@@ -29,7 +29,7 @@ public class doorSound : MonoBehaviour
             hasPlayed = true;
 
             Destroy(Vase);
-            Instantiate(BrokeVase);
+            Instantiate(BrokeVase, transform.position, Quaternion.identity);
         }
     }
 }
