@@ -8,28 +8,17 @@ public class doorSound : MonoBehaviour
     public bool hasPlayed = false;
     public GameObject Vase;
     public GameObject BrokeVase;
+    public Transform trans;
 
-    // Start is called before the first frame update
-    void Start()
+    private void OnCollisionEnter(Collision other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player" && !audioSource.isPlaying && !hasPlayed)
+        if (other.collider.tag == "Player" && !audioSource.isPlaying && !hasPlayed)
         {
             audioSource.Play();
             hasPlayed = true;
 
             Destroy(Vase);
-            Instantiate(BrokeVase, new Vector3(-30, 0, -17), Quaternion.identity);
+            Instantiate(BrokeVase, trans.position, Quaternion.identity);
         }
     }
 }
