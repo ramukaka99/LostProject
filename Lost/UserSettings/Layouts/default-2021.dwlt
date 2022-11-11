@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 75
+  controlID: 128
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -95,8 +95,8 @@ MonoBehaviour:
     y: 0
     width: 363
     height: 560
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 76
+  controlID: 129
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 77
+  controlID: 130
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -416,22 +416,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Audio/Sound Effects
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Audio/Sound Effects
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\unity project\LostProject\Lost
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 120}
-    m_SelectedIDs: 42940000
-    m_LastClickedID: 37954
-    m_ExpandedIDs: 00000000f6910000f8910000fa910000fc9100000092000000ca9a3b
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 82910000
+    m_LastClickedID: 37250
+    m_ExpandedIDs: 00000000688f00006a8f00006c8f00006e8f0000708f00005c91000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -459,7 +459,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f6910000f8910000fa910000fc910000fe91000000920000
+    m_ExpandedIDs: 00000000688f00006a8f00006c8f00006e8f0000708f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -588,10 +588,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 122}
-      m_SelectedIDs: 34840000
-      m_LastClickedID: 33844
-      m_ExpandedIDs: 04acffff80b5fffff2faffffd47600004a780000d8780000e478000026790000d07a00005a7e0000fc7e0000ee7f00005e810000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 8a7d0000
+      m_LastClickedID: 32138
+      m_ExpandedIDs: f2fafffff677000092780000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -846,7 +846,7 @@ MonoBehaviour:
       containerId: overlay-container--right
       floating: 0
       collapsed: 0
-      displayed: 0
+      displayed: 1
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -856,16 +856,16 @@ MonoBehaviour:
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
   m_Gizmos: 1
   m_OverrideSceneCullingMask: 6917529027641081856
-  m_SceneIsLit: 0
+  m_SceneIsLit: 1
   m_SceneLighting: 1
   m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -24.5971, y: 1.5173607, z: -15.489187}
+    m_Target: {x: -8.048412, y: 2.1628132, z: -0.36764568}
     speed: 2
-    m_Value: {x: -24.5971, y: 1.5173607, z: -15.489187}
+    m_Value: {x: -8.048412, y: 2.1628132, z: -0.36764568}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -912,13 +912,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0
   m_Rotation:
-    m_Target: {x: 0.044602223, y: 0.73067254, z: -0.048582453, w: 0.6796721}
+    m_Target: {x: 0.017625125, y: 0.17508422, z: -0.0036607683, w: 0.98446816}
     speed: 2
-    m_Value: {x: 0.044670887, y: 0.7295843, z: -0.04851098, w: 0.680704}
+    m_Value: {x: 0.01762375, y: 0.17507057, z: -0.0036604828, w: 0.9843914}
   m_Size:
-    m_Target: 1.1207294
+    m_Target: 1.0244114
     speed: 2
-    m_Value: 1.1207294
+    m_Value: 1.0244114
   m_Ortho:
     m_Target: 0
     speed: 2
