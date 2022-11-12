@@ -9,7 +9,7 @@ public class PlaySound : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player" && !audioSource.isPlaying && !hasPlayed)
+        if (other.CompareTag("Player") && !audioSource.isPlaying && !hasPlayed)
         {
             audioSource.Play();
             hasPlayed = true;

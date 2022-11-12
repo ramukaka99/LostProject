@@ -12,22 +12,16 @@ public class OnFlashlight : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Flash.gameObject.SetActive(false);
+        Flash.SetActive(false);
         XRGrabInteractable grabbable = GetComponent<XRGrabInteractable>();
         grabbable.activated.AddListener(OnFlash);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void OnFlash(ActivateEventArgs arg)
     {
         if (FlashlightActive == false)
         {
-            Flash.gameObject.SetActive(true);
+            Flash.SetActive(true);
             FlashlightActive = true;
         }
     }

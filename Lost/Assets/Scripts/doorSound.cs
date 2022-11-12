@@ -12,7 +12,7 @@ public class doorSound : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.collider.tag == "Player" && !audioSource.isPlaying && !hasPlayed)
+        if (other.collider.CompareTag("Player") && !audioSource.isPlaying && !hasPlayed)
         {
             audioSource.Play();
             hasPlayed = true;

@@ -9,7 +9,7 @@ public class KeyMech : MonoBehaviour
 
     private void OnCollisionEnter(Collision collisionInfo)
     {
-        if (collisionInfo.collider.tag == "Key")
+        if (collisionInfo.collider.CompareTag("Key"))
         {
             Destroy(lockBar);
             Destroy(key);

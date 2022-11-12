@@ -19,7 +19,9 @@ public class GameMenu : MonoBehaviour
     public void PauseButtonPressed(InputAction.CallbackContext context)
     {
         if (context.performed)
+        {
             DisplayWristUI();
+        }
     }
 
     public void DisplayWristUI()
