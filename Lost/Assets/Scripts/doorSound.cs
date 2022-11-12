@@ -5,20 +5,27 @@ using UnityEngine;
 public class doorSound : MonoBehaviour
 {
     public AudioSource audioSource;
+    public AudioSource audioSource2;
     public bool hasPlayed = false;
     public GameObject Vase;
     public GameObject BrokeVase;
     public Transform trans;
 
-    private void OnCollisionEnter(Collision other)
+    public void destroyobject()
     {
-        if (other.collider.CompareTag("Player") && !audioSource.isPlaying && !hasPlayed)
+            Destroy(Vase);
+            new WaitForSeconds(4f);
+            audioSource2.Play();
+            Instantiate(BrokeVase, trans.position, Quaternion.identity);
+
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player") && !audioSource.isPlaying && !hasPlayed)
         {
             audioSource.Play();
             hasPlayed = true;
-
-            Destroy(Vase);
-            Instantiate(BrokeVase, trans.position, Quaternion.identity);
+            destroyobject();
         }
     }
 }
