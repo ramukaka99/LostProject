@@ -7,14 +7,17 @@ public class LockControl : MonoBehaviour
     private int[] result, correctCombination;
     private bool isOpened;
     public GameObject CabLock;
+    public BoxCollider TeddyCollider;
 
     // Start is called before the first frame update
     void Start()
     {
         result = new int[] { 0, 0, 0, 0 };
-        correctCombination = new int[] { 1, 2, 1, 3 };
+        correctCombination = new int[] { 2, 1, 3, 1 };
         isOpened = false;
         Rotate.Rotated += CheckResults;
+
+        TeddyCollider.enabled = false;
     }
 
     private void CheckResults(string wheelName, int number)
@@ -46,6 +49,7 @@ public class LockControl : MonoBehaviour
             transform.position = new Vector3(transform.position.x, transform.position.y + 0.05f, transform.position.z);
             isOpened = true;
             Destroy(CabLock);
+            TeddyCollider.enabled = true;
         }
     }
 
