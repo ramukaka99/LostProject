@@ -6,12 +6,13 @@ public class LockControl : MonoBehaviour
 {
     private int[] result, correctCombination;
     private bool isOpened;
+    public GameObject CabLock;
 
     // Start is called before the first frame update
     void Start()
     {
         result = new int[] { 0, 0, 0, 0 };
-        correctCombination = new int[] { 3, 4, 1, 9 };
+        correctCombination = new int[] { 1, 2, 1, 3 };
         isOpened = false;
         Rotate.Rotated += CheckResults;
     }
@@ -44,6 +45,7 @@ public class LockControl : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, transform.position.y + 0.05f, transform.position.z);
             isOpened = true;
+            Destroy(CabLock);
         }
     }
 
