@@ -42,7 +42,7 @@ public class LockControl : MonoBehaviour
 
         if (result[0] == correctCombination[0] && result[1] == correctCombination[1] && result[2] == correctCombination[2] && result[3] == correctCombination[3] && !isOpened)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y + 0.1f, transform.position.z);
+            transform.position = new Vector3(transform.position.x, transform.position.y + 0.05f, transform.position.z);
             isOpened = true;
         }
     }

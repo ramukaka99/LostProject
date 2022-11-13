@@ -16,9 +16,9 @@ public class Rotate : MonoBehaviour
         numberShown = 0;
     }
 
-    public void changeSide()
+    private void OnTriggerEnter(Collider other)
     {
-        if (coroutineAllowed)
+        if (other.CompareTag("LockWheel") && coroutineAllowed)
         {
             StartCoroutine("RotateWheel");
         }
