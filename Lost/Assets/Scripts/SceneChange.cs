@@ -10,6 +10,11 @@ public class SceneChange : MonoBehaviour
         SceneManager.LoadScene(2);
     }
 
+    public void toyCar()
+    {
+        SceneManager.LoadScene(4);
+    }
+
     public void DemoChange()
     {
         SceneManager.LoadScene(0);
