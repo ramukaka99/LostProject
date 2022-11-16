@@ -29,7 +29,7 @@ public class Subtitle : MonoBehaviour
             hasPlayed = true;
             //uiObject.SetActive(true);
             dialogue.SetActive(true);
-            StartCoroutine(TypeDialog(Text));
+            //StartCoroutine(TypeDialog(Text));
             StartCoroutine("WaitForSec");
         }
     }
