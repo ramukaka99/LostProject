@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class doorSound : MonoBehaviour
 {
@@ -10,6 +11,14 @@ public class doorSound : MonoBehaviour
     public GameObject Vase;
     public GameObject BrokeVase;
     public Transform trans;
+
+    public GameObject dialogue;
+    [SerializeField] private float duration;
+
+    void Start()
+    {
+        dialogue.SetActive(false);
+    }
 
     public void destroyobject()
     {
@@ -25,7 +34,15 @@ public class doorSound : MonoBehaviour
         {
             audioSource.Play();
             hasPlayed = true;
+            dialogue.SetActive(true);
+            StartCoroutine("WaitForSec");
             destroyobject();
         }
+    }
+
+    IEnumerator WaitForSec()
+    {
+        yield return new WaitForSeconds(duration);
+        Destroy(dialogue);
     }
 }

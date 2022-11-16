@@ -6,18 +6,16 @@ using TMPro;
 public class Subtitle : MonoBehaviour
 {
     public AudioSource audioSource;
-    //public GameObject uiObject;
     public GameObject dialogue;
     public bool hasPlayed = false;
     [SerializeField] private float duration;
     [SerializeField] int letterPerSeconds;
     [SerializeField] TextMeshProUGUI dialogText;
-    [SerializeField] string Text;
+    //[SerializeField] string Text;
 
     // Start is called before the first frame update
     void Start()
     {
-        //uiObject.SetActive(false);
         dialogue.SetActive(false);
     }
 
@@ -27,7 +25,6 @@ public class Subtitle : MonoBehaviour
         {
             audioSource.Play();
             hasPlayed = true;
-            //uiObject.SetActive(true);
             dialogue.SetActive(true);
             //StartCoroutine(TypeDialog(Text));
             StartCoroutine("WaitForSec");

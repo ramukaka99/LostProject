@@ -10,6 +10,14 @@ public class DeactivateLights : MonoBehaviour
     public GameObject cricketSound;
     public GameObject newCricketSound;
 
+    public GameObject dialogue;
+    [SerializeField] private float duration;
+
+    void Start()
+    {
+        dialogue.SetActive(false);
+    }
+
     public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && !audioSource.isPlaying && !hasPlayed)
@@ -17,8 +25,16 @@ public class DeactivateLights : MonoBehaviour
             audioSource.Play();
             hasPlayed = true;
             objectDeactivate.SetActive(false);
+            dialogue.SetActive(true);
+            StartCoroutine("WaitForSec");
             Destroy(cricketSound);
             newCricketSound.SetActive(true);
         }
+    }
+
+    IEnumerator WaitForSec()
+    {
+        yield return new WaitForSeconds(duration);
+        Destroy(dialogue);
     }
 }
