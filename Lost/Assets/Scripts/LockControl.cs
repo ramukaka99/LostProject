@@ -9,6 +9,7 @@ public class LockControl : MonoBehaviour
     public GameObject CabLock;
     public GameObject MainLock;
     public BoxCollider TeddyCollider;
+    //public AudioSource unlocked;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +27,7 @@ public class LockControl : MonoBehaviour
         Destroy(CabLock);
         Destroy(MainLock);
         TeddyCollider.enabled = true;
-        
+        //unlocked.Play();
     }
 
     private void CheckResults(string wheelName, int number)
