@@ -16522,9 +16522,9 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 32.551525
+  m_Intensity: 1.5
+  m_Range: 8.61
+  m_SpotAngle: 134.48773
   m_InnerSpotAngle: 24.3536
   m_CookieSize: 10
   m_Shadows:
@@ -16556,7 +16556,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -16580,7 +16580,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1683926705}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.584, y: 3.185, z: 1.482}
+  m_LocalPosition: {x: -0.64, y: 2.56, z: 1.482}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19322,7 +19322,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1937538018}
-  m_LocalRotation: {x: 0, y: 0.88043594, z: 0, w: 0.47416508}
+  m_LocalRotation: {x: 0, y: 0.22970997, z: 0, w: 0.97325915}
   m_LocalPosition: {x: 1.147, y: 1.131, z: -0.834}
   m_LocalScale: {x: 0.049999997, y: 0.049999997, z: 0.049999997}
   m_ConstrainProportionsScale: 0
@@ -19336,7 +19336,7 @@ Transform:
   - {fileID: 1886867868}
   m_Father: {fileID: 0}
   m_RootOrder: 133
-  m_LocalEulerAnglesHint: {x: 0, y: 123.39, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 26.56, z: 0}
 --- !u!1001 &1956513152
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20620,7 +20620,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -45, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.43, y: 0.455}
+  m_AnchoredPosition: {x: 0.43, y: 0.705}
   m_SizeDelta: {x: 200, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2028582179
@@ -22113,7 +22113,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'CHRIS: Daddy?... I have a daughter '
+  m_text: 'CHRIS: Daddy?... I have a daughter?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -22462,7 +22462,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -42967,7 +42967,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8236c6eec56cfdd43802d1c45f980a8e, type: 2}
+  - {fileID: 2100000, guid: 8c119e6af026c3845ba3e754332b89c7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
