@@ -12,7 +12,7 @@ public class countdownScene2 : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer <= 0)
         {
-            SceneManager.LoadScene(5);
+            SceneManager.LoadScene(6);
         }
     }
 }
