@@ -11,21 +11,31 @@ public class MyEventTriggerOnEnter : MonoBehaviour
     public UnityEvent jumpScare;
 
     public GameObject Scare;
+    private bool audioPlayed = false;
     [SerializeField] private AudioSource audioSource;
+
+    void Start()
+    {
+        Scare.SetActive(false);
+    }
 
 
     private void OnTriggerEnter(Collider other)
     {
-        myEvents.Invoke();
-        myEvents2.Invoke();
-        StartCoroutine("Buffer");
-        Scare.SetActive(true);
-        jumpScare.Invoke();
-        audioSource.Play();
+        if (!audioSource.isPlaying && !audioPlayed)
+        {
+            Scare.SetActive(true);
+            jumpScare.Invoke();
+            audioSource.Play();
+            audioPlayed = true;
+            StartCoroutine("Buffer");
+            myEvents.Invoke();
+            myEvents2.Invoke();
+        }
     }
 
     IEnumerator Buffer()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(4f);
     }
 }
