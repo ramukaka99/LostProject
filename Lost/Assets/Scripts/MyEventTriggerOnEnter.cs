@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class MyEventTriggerOnEnter : MonoBehaviour
 {
@@ -37,5 +38,6 @@ public class MyEventTriggerOnEnter : MonoBehaviour
     IEnumerator Buffer()
     {
         yield return new WaitForSeconds(4f);
+        SceneManager.LoadScene(8);
     }
 }
