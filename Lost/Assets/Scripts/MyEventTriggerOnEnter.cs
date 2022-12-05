@@ -30,14 +30,14 @@ public class MyEventTriggerOnEnter : MonoBehaviour
             audioSource.Play();
             audioPlayed = true;
             StartCoroutine("Buffer");
-            myEvents.Invoke();
-            myEvents2.Invoke();
         }
     }
 
     IEnumerator Buffer()
     {
-        yield return new WaitForSeconds(4f);
-        SceneManager.LoadScene(8);
+        yield return new WaitForSeconds(5f);
+        myEvents.Invoke();
+        myEvents2.Invoke();
+        //SceneManager.LoadScene(8);
     }
 }
