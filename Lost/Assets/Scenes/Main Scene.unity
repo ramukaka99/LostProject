@@ -35260,6 +35260,7 @@ MonoBehaviour:
   CabLock: {fileID: 2022914779}
   MainLock: {fileID: 919132147582108817}
   TeddyCollider: {fileID: 1947151219}
+  unlocked: {fileID: 6342993538736824402}
 --- !u!1 &1655570373
 GameObject:
   m_ObjectHideFlags: 0
@@ -36598,7 +36599,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 781691623879268458aa7d142fb063fe, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9f20368070f7b8d499dfb830e1fbe8a7, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.542
   m_Pitch: 1
