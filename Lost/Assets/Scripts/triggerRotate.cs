@@ -9,6 +9,7 @@ public class triggerRotate : MonoBehaviour
     public GameObject WK;
     public UnityEvent eventRotate;
     public UnityEvent drawerOpen;
+    public AudioSource Song;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -17,6 +18,7 @@ public class triggerRotate : MonoBehaviour
             Destroy(windingKey);
             WK.SetActive(true);
             eventRotate.Invoke();
+            Song.Play();
             StartCoroutine("box");
         }
     }
