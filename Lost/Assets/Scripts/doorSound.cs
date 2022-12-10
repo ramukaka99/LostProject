@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Events;
 
 public class doorSound : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class doorSound : MonoBehaviour
     public GameObject Vase;
     public GameObject BrokeVase;
     public Transform trans;
+
+    public UnityEvent Instruction;
 
     public GameObject dialogue;
     [SerializeField] private float duration;
@@ -26,7 +29,7 @@ public class doorSound : MonoBehaviour
             new WaitForSeconds(4f);
             audioSource2.Play();
             Instantiate(BrokeVase, trans.position, Quaternion.identity);
-
+            Instruction.Invoke();
     }
     private void OnTriggerEnter(Collider other)
     {
