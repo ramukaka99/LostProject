@@ -43,6 +43,16 @@ public class GameMenu : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    public void PlayGameLevel1()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void PlayGameLevel2()
+    {
+        SceneManager.LoadScene(7);
+    }
+
     public void QuitGame()
     {
         Debug.Log("QUIT!");
