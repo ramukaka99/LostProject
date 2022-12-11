@@ -24,7 +24,6 @@ public class LockControl : MonoBehaviour
 
     public void AfterLockOpen()
     {
-        unlocked.Play();
         Destroy(CabLock);
         Destroy(MainLock);
         TeddyCollider.enabled = true;
@@ -58,6 +57,8 @@ public class LockControl : MonoBehaviour
         {
             //transform.position = new Vector3(transform.position.x, transform.position.y + 0.05f, transform.position.z);
             isOpened = true;
+            unlocked.Play();
+
             AfterLockOpen();
             
         }
