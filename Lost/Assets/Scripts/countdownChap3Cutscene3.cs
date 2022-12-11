@@ -16,7 +16,7 @@ public class countdownChap3Cutscene3 : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer <= 0)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(17);
         }
     }
 }

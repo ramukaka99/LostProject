@@ -19,4 +19,29 @@ public class SceneChange : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    public void presentbox()
+    {
+        SceneManager.LoadScene(9);
+    }
+
+    public void ring()
+    {
+        SceneManager.LoadScene(12);
+    }
+
+    public void brokenTeddyBear()
+    {
+        SceneManager.LoadScene(14);
+    }
+
+    public void portrait()
+    {
+        SceneManager.LoadScene(16);
+    }
+
+    public void car()
+    {
+        SceneManager.LoadScene(18);
+    }
 }

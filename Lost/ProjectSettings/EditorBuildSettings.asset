@@ -35,6 +35,36 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Chapter2(2).unity
     guid: b52035f2a1fa45848a053ace5a9f9b2a
+  - enabled: 1
+    path: Assets/Scenes/Chapter 2 Present Box Cutscene.unity
+    guid: feb29a6af835cb44489f2fdaa82b8b75
+  - enabled: 1
+    path: Assets/Scenes/Chapter2(2) Return.unity
+    guid: 83b2cda0df58ee445b3fca46cfe0d744
+  - enabled: 1
+    path: Assets/Scenes/Chapter3.unity
+    guid: 905a33431c2efbd438b547dd9647aa60
+  - enabled: 1
+    path: Assets/Scenes/Chapter 3 Cutscene 1.unity
+    guid: 31eb11ed2197fc943ad68cfd4b69ed69
+  - enabled: 1
+    path: Assets/Scenes/Chapter3 Return 1.unity
+    guid: c6a32e1a3d195d04e9ddf6614c547af6
+  - enabled: 1
+    path: Assets/Scenes/Chapter 3 Cutscene 2.unity
+    guid: 3c307a3ce5514d1428a188183f4d45ac
+  - enabled: 1
+    path: Assets/Scenes/Chapter3 Return 2.unity
+    guid: e7c41ce83534fcd4293731ce1a98e351
+  - enabled: 1
+    path: Assets/Scenes/Chapter 3 Cutscene 3.unity
+    guid: 8a2c6cc15c443f641a3a311708c482ee
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: c540744004049ba4c8185e4cb32cef26
+  - enabled: 1
+    path: Assets/Scenes/Ending Cutscene.unity
+    guid: 860953e17d839204bb619f50a39626c0
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b9d0b99dab081684b8a7d028523bff2a,
       type: 2}

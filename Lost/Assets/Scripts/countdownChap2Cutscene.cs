@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class countdownChap3Cutscene2 : MonoBehaviour
+public class countdownChap2Cutscene : MonoBehaviour
 {
-    public float timer = 17f;
+    public float timer = 7f;
     public Image black;
     public Animator anim;
 
@@ -16,7 +16,7 @@ public class countdownChap3Cutscene2 : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer <= 0)
         {
-            SceneManager.LoadScene(15);
+            SceneManager.LoadScene(10);
         }
     }
 }
