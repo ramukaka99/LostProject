@@ -33483,8 +33483,8 @@ GameObject:
   - component: {fileID: 1690589782418963319}
   - component: {fileID: 3165662462162975954}
   - component: {fileID: 3165662462162975955}
-  - component: {fileID: 3165662462162975957}
   - component: {fileID: 3165662462162975956}
+  - component: {fileID: 3165662462162975957}
   m_Layer: 0
   m_Name: Outer button 2.001
   m_TagString: Untagged
@@ -33652,11 +33652,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3165662462162975953}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 977be202b8e508f4eb94534c112c4d15, type: 3}
+  m_Script: {fileID: 11500000, guid: feedc6a0488466948bd8cc003890162d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 3165662462162975956}
-  hasPlayed: 0
+  button: {fileID: 3165662462162975956}
 --- !u!33 &3173512029861778332
 MeshFilter:
   m_ObjectHideFlags: 0

@@ -38,7 +38,7 @@ public class MyEventTriggerOnEnter : MonoBehaviour
 
     IEnumerator Buffer()
     {
-        yield return new WaitForSeconds(8f);
+        yield return new WaitForSeconds(12f);
         myEvents.Invoke();
         myEvents2.Invoke();
         SceneManager.LoadScene(8);
