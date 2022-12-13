@@ -65,6 +65,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ending Cutscene.unity
     guid: 860953e17d839204bb619f50a39626c0
+  - enabled: 1
+    path: Assets/Scenes/Summary.unity
+    guid: 0cf87532db22aca4e8332257c2e94bf3
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b9d0b99dab081684b8a7d028523bff2a,
       type: 2}
